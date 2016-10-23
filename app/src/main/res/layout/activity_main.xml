@@ -1,19 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.www.app.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-    <com.bigkoo.convenientbanner.ConvenientBanner
+    <View
+        android:id="@+id/line"
+        android:layout_above="@+id/layout_tab"
+        style="@style/line"/>
+    <LinearLayout
+        android:id="@+id/layout_tab"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/main_tab_bottom"
+                android:id="@+id/tab_home"
+                android:onClick="fragmclick"
+                android:drawableTop="@drawable/tab_home_image"
+                android:checked="true"
+                android:text="@string/tab_rob"/>
+            <RadioButton
+                style="@style/main_tab_bottom"
+                android:id="@+id/tab_group"
+                android:onClick="fragmclick"
+                android:drawableTop="@drawable/tab_group_image"
+                android:checked="false"
+                android:text="@string/tab_group"/>
 
-    </com.bigkoo.convenientbanner.ConvenientBanner>
-</LinearLayout>
+            <RadioButton
+                style="@style/main_tab_bottom"
+                android:id="@+id/tab_direct"
+                android:onClick="fragmclick"
+                android:drawableTop="@drawable/tab_direct_image"
+                android:checked="false"
+                android:text="@string/tab_direct"/>
+
+            <RadioButton
+                style="@style/main_tab_bottom"
+                android:id="@+id/tab_options"
+                android:onClick="fragmclick"
+                android:drawableTop="@drawable/tab_options_image"
+                android:checked="false"
+                android:text="@string/tab_options"/>
+            <RadioButton
+                style="@style/main_tab_bottom"
+                android:id="@+id/tab_me"
+                android:onClick="fragmclick"
+                android:drawableTop="@drawable/tab_me_image"
+                android:checked="false"
+                android:text="@string/tab_me"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line">
+    </FrameLayout>
+</RelativeLayout>

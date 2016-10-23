@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">APP</string>
+    <string name="app_name">购购乐</string>
+
+    <string name="tab_rob">抢购</string>
+    <string name="tab_group">拼购</string>
+    <string name="tab_direct">直播清单</string>
+    <string name="tab_options">玩购</string>
+    <string name="tab_me">我的</string>
 </resources>

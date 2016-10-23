@@ -7,5 +7,31 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="LoadingProgressBar">
+        <item name="android:maxWidth">45.0dip</item>
+        <item name="android:maxHeight">45.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/loading_progressbar</item>
+        <item name="android:minWidth">25.0dip</item>
+        <item name="android:minHeight">25.0dip</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    //分割线
+    <style name="line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    //mainactivity 底部tab 的样式
+    <style name="main_tab_bottom">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width"> wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@drawable/tab_home_color</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity"> center_horizontal</item>
+        <item name="android:button">@null</item>
+    </style>
+
 
 </resources>
