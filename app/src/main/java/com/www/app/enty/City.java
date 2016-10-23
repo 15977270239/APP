@@ -6,4 +6,5 @@ package com.www.app.enty;
 
 public class City  {
     private String city;
+    private String code;
 }
