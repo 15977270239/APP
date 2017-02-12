@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Adapter;
@@ -284,6 +285,13 @@ public class MQuery {
 	public MQuery adapter(Adapter adapter) {
 		if (view instanceof AdapterView) {
 			AdapterView av = (AdapterView) view;
+			av.setAdapter(adapter);
+		}
+		return this;
+	}
+	public MQuery adapter(RecyclerView.Adapter adapter) {
+		if (view instanceof RecyclerView) {
+			RecyclerView av = (RecyclerView) view;
 			av.setAdapter(adapter);
 		}
 		return this;

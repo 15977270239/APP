@@ -686,7 +686,7 @@ public class NetAccess {
 
 
 	/**
-	 * 获取参数(得到 ?a=12&b=123)
+	 * 获取参数(得到 ?StatusBarUtil=12&b=123)
 	 * 
 	 * @author ping 2014-4-10 上午9:27:01
 	 * @param params
